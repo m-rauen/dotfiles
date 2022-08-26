@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "DOI2BibTeX",
+    "description": "Fast and easily generate BibTeX markdown file with the correct entry format from your requested DOI without closing or leaving your webrowser.",
+    "version": "1.0.0",
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "",
+            "48": "",
+            "128": ""
+        }
+    },
+    "content_scripts": [{
+        "html": [main.html],
+        "js": [main.js]
+    }]
+}

@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor" : "newUntitledFile",
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 15,
+    "diffEditor.wordWrap": "on",
+    "editor.rulers" : [80,120],
+    
+    "extensions.ignoreRecommendations" : true,
+    "python.defaultInterpreterPath": "/bin/python3.9",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "tabnine.experimentalAutoImports": true,
+
+    "git.confirmSync": false,
+    
+}
