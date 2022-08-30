@@ -28,7 +28,7 @@ install "gnome-tweaks" "sudo add-apt-repository universe && sudo apt
 install "gnome-extensions" "sudo apt install gnome-shell-extensions"
 install "bash-it" "git clone --depth=1 https://github.com/Bash-it/bash-it.git
 #~/.bash_it && cd ~/.bash_it/install.sh"
-install "starship" 'sh -c "$(curl -fsSL https://starship.rs/install.sh)"'
+install "starship" "curl -sS https://starship.rs/install.sh | sh"
 install "gogh" "git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh"
 install "tmux" "sudo apt install tmux"
 install "ctags" "sudo apt install universal-ctags"
