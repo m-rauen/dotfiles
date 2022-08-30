@@ -1,0 +1,48 @@
+format = """
+$time$all$character
+"""
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[package]
+disabled = true
+
+[username]
+style_user = "bold blue"
+show_always = true
+
+[time]
+disabled = false
+format = '🕙 [\[ $time \]]($style) '
+time_format = "%T"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[character] 
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+[memory_usage]
+format = "- using $symbol [${ram_pct}]($style) "
+symbol = "💾"
+threshold = -1
+style = "bold dimmed white"
+disabled = false
+
+

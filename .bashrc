@@ -153,7 +153,7 @@ export BASH_IT="/home/matheus-r/.bash_it"
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location /.bash_it/themes/
-export BASH_IT_THEME='atomic'
+#export BASH_IT_THEME='atomic'
 
 # Some themes can show whether `sudo` has a current token or not.
 # Set `$THEME_CHECK_SUDO` to `true` to check every prompt:
@@ -183,11 +183,11 @@ export TODO="t"
 #BASH_IT_PROJECT_PATHS="${HOME}/Projects:/Volumes/work/src"
 
 # Set this to false to turn off version control status checking within the prompt for all themes
-export SCM_CHECK=true
+export SCM_CHECK=false
 # Set to actual location of gitstatus directory if installed
-export SCM_GIT_GITSTATUS_DIR="$HOME/gitstatus"
+#export SCM_GIT_GITSTATUS_DIR="$HOME/gitstatus"
 # per default gitstatus uses 2 times as many threads as CPU cores, you can change this here if you must
-export GITSTATUS_NUM_THREADS=1
+#export GITSTATUS_NUM_THREADS=1
 
 # Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),
@@ -225,6 +225,10 @@ export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 source "$BASH_IT"/bash_it.sh
 
 # Atomic (bash-it) configuration
-THEME_CLOCK_FORMAT="%H:%M:%S"
-___ATOMIC_TOP_LEFT="user_info dir scm exitcode"
-export SCM_GIT_SHOW_MINIMAL_INFO=true
+#THEME_CLOCK_FORMAT="%H:%M:%S"
+#___ATOMIC_TOP_LEFT="user_info dir scm exitcode"
+#export SCM_GIT_SHOW_MINIMAL_INFO=true
+
+# Starship configuration
+eval "$(starship init bash)"
+

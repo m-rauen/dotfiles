@@ -11,4 +11,6 @@ alias orcaplot='~/.orca/orca_plot'
 alias po='poweroff'
 alias killwine='wineserver -k'
 alias gplot='gnuplot'
+alias ..='cd ..'
+alias ...='cd ../..'
 
