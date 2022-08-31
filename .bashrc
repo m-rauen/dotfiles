@@ -120,24 +120,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/Users/matheus-r/Library/Python/3.9/bin:$PATH"
 export PATH="/home/matheus-r/.local/bin:$PATH"
 
-# OpenMPI here:
-export PATH="/usr/apps/openmpi/4.1.1/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/apps/openmpi/4.1.1/lib:$LD_LIBRARY_PATH"
-export MPI_DIR="/usr/apps/openmpi/4.1.1"
-
-# ORCA here:
-export ORCA_DIR="/home/matheus-r/.orca"
-export PATH=$PATH:"/home/matheus-r/.orca"
-
-# xTB here:
-export MKL_NUM_THREADS=4
-export OMP_NUM_THREADS=4
-export OMP_STACKSIZE=2G
-export OMP_MAX_ACTIVE_LEVELS=1
-ulimit -s unlimited 
-export XTBPATH="/home/matheus-r/.xtb"
-source $XTBPATH/share/xtb/config_env.bash 
-
 # Config for Gogh load themes in Gnome correctly
 export TERMINAL=gnome-terminal
 
@@ -177,7 +159,7 @@ unset MAILCHECK
 export IRC_CLIENT='irssi'
 
 # Set this to the command you use for todo.txt-cli
-export TODO="t"
+#export TODO="t"
 
 # Set this to the location of your work or project folders
 #BASH_IT_PROJECT_PATHS="${HOME}/Projects:/Volumes/work/src"
@@ -224,11 +206,6 @@ export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
-# Atomic (bash-it) configuration
-#THEME_CLOCK_FORMAT="%H:%M:%S"
-#___ATOMIC_TOP_LEFT="user_info dir scm exitcode"
-#export SCM_GIT_SHOW_MINIMAL_INFO=true
-
-# Starship configuration
+# Load Starship
 eval "$(starship init bash)"
 
