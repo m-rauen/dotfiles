@@ -1,6 +1,6 @@
 # dotfiles
 
-### :info: Information
+### :information_source: Information
 
 ---
 
