@@ -1,3 +1,10 @@
 [user]
 	email = matheus.rauen@grad.ufsc.br
-	name = Matheus Rauen
+    name = Matheus Rauen C. L. 
+
+[author]
+    name = Matheus Rauen C. L.
+    email = matheus.rauen@grad.ufsc.br
+
+[init]
+    defaultBranch = master 
