@@ -30,7 +30,8 @@ install "starship" "curl -sS https://starship.rs/install.sh | sh"
 install "gogh" "git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh"
 install "tmux" "sudo apt install tmux"
 install "ctags" "sudo apt install universal-ctags"
-
-
+install "pip" "sudo apt install python3-pip"
+install "latex" "sudo apt install texlive"
+install "latex_pt-br" "sudo apt install texlive-lang-portuguese"
 
 
