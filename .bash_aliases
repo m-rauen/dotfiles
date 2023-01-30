@@ -25,6 +25,7 @@ alias killwine='wineserver -k'
 # programs aliases
 alias gplot='gnuplot'
 
-# pip aliases 
+# python3 aliases 
 alias pipupgd='python3 pip-upgd-all.py'
+alias htk='python3 hartree-to-kcal.py'
 
