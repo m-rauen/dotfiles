@@ -1,5 +1,6 @@
 import os
-import traceback
+#import traceback
+#https://stackoverflow.com/a/3702847
 
 fname = input('File name: ')
 
