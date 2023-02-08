@@ -1,4 +1,5 @@
 import os
+import traceback
 
 fname = input('File name: ')
 
@@ -33,12 +34,12 @@ for lines in open(fname):
                     raise ValueError('Words error!')
                 except ValueError:
                     continue
-            else:
-                if (w.isalnum() == True): 
+            else:  
+                try:
                     energy = float(w)
-                    new_energ = round(energy * 627.50, 3)
-                    energy_data.append(new_energ)
-                else:
+                    conv_energy = (energy * 627.50)
+                    energy_data.append(conv_energy)
+                except ValueError:
                     energy_data.append(w)
                 
 fhandler = open('converted_results.dat', 'w')        
