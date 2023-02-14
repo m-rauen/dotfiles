@@ -1,4 +1,5 @@
 # apt aliases 
+alias mkinstall='sudo make install'
 alias aptclean='sudo apt clean'
 alias aptautorm='sudo apt autoremove'
 alias pkgf='dpkg --listfiles'
@@ -7,11 +8,13 @@ alias pkglist='dpkg --list'
 
 # tmux aliases 
 alias tmx='tmux'
-alias tlist='tmux ls'
-alias tnew='tmux new-session -s'
-alias tattach='tmux a -t'
-alias tkill='tmux kill-session -t'
-alias trename='tmux rename-session -t'
+alias tlist='tmux ls' #list sessions 
+alias tnew='tmux new-session -s' #start named session 
+alias tattach='tmux a -t' #attach to specific session 
+alias tdetach='tmux detach' #detach from the current session 
+alias tkill='tmux kill-session -t'  #kill session specified 
+alias trename='tmux rename-session -t' #rename specific session 
+alias tinfo='tmux info' #show every session, window, pane, etc
 
 # vim aliases 
 alias vver='vim --version'
