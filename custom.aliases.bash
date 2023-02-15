@@ -24,7 +24,7 @@ alias gi='git init -b master'
 alias ginit='git init -b master'
 alias gimain='git init -b main'
 
-alias gadd='git add .'
+alias ga='git add .'
 
 alias gc='git commit -v -m'
 
