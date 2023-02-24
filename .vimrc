@@ -1,6 +1,6 @@
 syntax on
 
-map P :! pdflatex %<CR><CR> 
+map I :! pdflatex %<CR><CR> 
 map S :! mupdf-x11 $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
 
 set spell
