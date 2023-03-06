@@ -20,6 +20,7 @@ install(){
 }
 eval "cp .bash_aliases ~/" 
 eval "cp .bash_profile ~/"
+install "firacode" "sudo apt install fonts-firacode"
 install "vim" "sudo apt install vim"
 install "curl" "sudo apt install curl"
 install "okular" "sudo apt install okular"
