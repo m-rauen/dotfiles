@@ -23,6 +23,7 @@ eval "cp .bash_aliases ~/"
 eval "cp .bash_profile ~/"
 eval "cp pip-upgd-all.py ~/"
 eval "cp hartree-to-kcal.py ~/"
+eval "cp user-dirs.dirs ~/.config"
 install "nerd-fonts" "git clone --depth 1
 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts"
 eval "cd ~/.nerd-fonts"
