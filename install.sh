@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#TODO: modify 'starship' installation source
+#TODO: add VSCode installation and settings 
+#TODO: add Google Chrome installation and settings
+
 command_already_exists() {
     packg=$1
     echo "\nSuccess!"
@@ -35,16 +39,11 @@ install "gnome-tweaks" "sudo apt install gnome-tweaks"
 install "gnome-extensions" "sudo apt install gnome-shell-extensions"
 install "bash-it" "git clone --depth=1 https://github.com/Bash-it/bash-it.git
 ~/.bash_it" 
-
 install "starship" "curl -sS https://starship.rs/install.sh | sh" 
-
 install "gogh" "git clone https://github.com/Gogh-Co/Gogh.git ~/.gogh"
 install "tmux" "sudo apt install tmux" 
 install "ctags" "sudo apt install universal-ctags"
 install "pip" "sudo apt install python3-pip"
-install "latex" "sudo apt install texlive"
-install "latex_pt-br" "sudo apt install texlive-lang-portuguese"
-
 eval "cd ~/.nerd-fonts && ./install.sh"
 eval "cp .config/starship.toml ~/.config/"
 eval "cp .tmux.conf ~/"
