@@ -1,2 +1,0 @@
-def singleOutput(result):
-    

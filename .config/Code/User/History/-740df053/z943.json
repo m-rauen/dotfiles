@@ -1,6 +1,0 @@
-{
-    "manifest_version": 2,
-    "name": "DOI2BibTeX",
-    "description": "Fast and easily generate BibTeX markdown file with the correct entry format from your requested DOI without closing or leaving your webrowser.",
-    
-}
