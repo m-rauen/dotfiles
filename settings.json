@@ -1,25 +1,67 @@
 {
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor" : "newUntitledFile",
-    
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.autoSave": "afterDelay",
-    
     "editor.wordWrap": "on",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 15,
-    "editor.fontLigatures": true,
-    "diffEditor.wordWrap": "on",
-    "editor.rulers" : [80,120],
     "editor.bracketPairColorization.enabled": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true, 
+    "editor.fontSize": 14, 
+    "editor.parameterHints.enabled": false,
+    "editor.rulers": [80, 120],
+    "editor.semanticHighlighting.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.labelFormat": "short",
+    "workbench.colorTheme": "One Dark Pro Darker",
     
-    "extensions.ignoreRecommendations" : true,
-    "python.defaultInterpreterPath": "/bin/python3.9",
-    "latex-workshop.view.pdf.viewer": "tab",
+    "breadcrumbs.enabled": true,
+    
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    
     "tabnine.experimentalAutoImports": true,
+    "extensions.ignoreRecommendations": true,
 
-    "git.confirmSync": false,
-    "window.zoomLevel": 1
-    
+    "git.ignoreLimitWarning": true,
+    "python.defaultInterpreterPath": "/bin/python3",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"] 
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["m","m"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>","d"],
+            "after": ["d","d"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-b>": false,
+        "<C-v>": false,
+    },
+    "files.autoSave": "afterDelay"
 }
