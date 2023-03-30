@@ -24,6 +24,7 @@ alias killwine='wineserver -k'
 
 # programs aliases
 alias gplot='gnuplot'
+alias avogadro='flatpak run org.openchemistry.Avogadro2'
 
 # python3 aliases 
 alias pipupgd='python3 pip-upgd-all.py'
