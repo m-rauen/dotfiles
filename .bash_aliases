@@ -25,7 +25,8 @@ alias killwine='wineserver -k'
 # programs aliases
 alias gplot='gnuplot'
 alias avogadro='flatpak run org.openchemistry.Avogadro2'
-
+alias orca='~/.orca/orca'
+alias orcaplot='~/.orca/orca_plot'
 # python3 aliases 
 alias pipupgd='python3 pip-upgd-all.py'
 alias htk='python3 hartree-to-kcal.py'
