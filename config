@@ -1,0 +1,12 @@
+Host jupiter
+    HostName 150.162.31.2
+    Port 2222
+    User mrauen 
+#---
+Host newton
+    HostName newton.cesup.ufrgs.br
+    User mrauen 
+#---
+Host adf
+    HostName 100.117.116.116
+    User geem 

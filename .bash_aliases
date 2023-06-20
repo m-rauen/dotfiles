@@ -15,9 +15,6 @@ alias dow='cd ~/Downloads/'
 alias geem='cd ~/Documents/GEEM'
 alias repos='cd ~/Repos'
 
-# ssh alias 
-alias jupiter='ssh mrauen@150.162.31.2 -p 2222'
-
 # wine aliases 
 alias chemcraft='cd ~/.wine/drive_c/Chemcraft/Chemcraft.exe'
 alias killwine='wineserver -k'
