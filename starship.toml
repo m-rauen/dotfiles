@@ -2,11 +2,14 @@ format = """
 $time$all$character
 """
 
+command_timeout = 500
+
 [nodejs]
 disabled = true
 
 [python]
-disabled = true
+style = '🐍 '
+format = ' via [${symbol}(${version} )(\($virtualenv\))]($style) '
 
 [package]
 disabled = true

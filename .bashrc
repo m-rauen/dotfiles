@@ -111,23 +111,29 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# NVM here:
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Python3.9 here:
-export PATH="/Users/matheus-r/Library/Python/3.9/bin:$PATH"
-export PATH="/home/matheus-r/.local/bin:$PATH"
-
 # OpenMPI here:
 export PATH="/usr/apps/openmpi/4.1.1/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/apps/openmpi/4.1.1/lib:$LD_LIBRARY_PATH"
 export MPI_DIR="/usr/apps/openmpi/4.1.1"
 
+# LaTeX here:
+export MANPATH="$MANPATH:/usr/local/texlive/2022/texmf-dist/doc/man"
+export INFOPATH="$INFOPATH:/usr/local/texlive/2022/texmf-dist/doc/info"
+export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+
 # ORCA here:
 export ORCA_DIR="/home/matheus-r/.orca"
 export PATH=$PATH:"/home/matheus-r/.orca"
+
+# NCIPlot here: 
+export NCIPLOT_HOME="/home/matheus-r/nciplot/"
+export OMP_NUM_THREADS=4 
+
+# MultiWFN here: 
+export OMP_STACKSIZE=2G
+ulimit -s unlimited 
+export Multiwfnpath='/home/matheus-r/MultiWFN'
+export PATH=$PATH:'/home/matheus-r/MultiWFN'
 
 # xTB here:
 export MKL_NUM_THREADS=4

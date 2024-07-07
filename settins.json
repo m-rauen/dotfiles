@@ -6,10 +6,11 @@
     "editor.fontSize": 14, 
     "editor.parameterHints.enabled": false,
     "editor.rulers": [80, 120],
+    "editor.lineNumbers": "relative",
     "editor.semanticHighlighting.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.labelFormat": "short",
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.colorTheme": "Visual Studio Light",
     
     "breadcrumbs.enabled": true,
     
@@ -61,7 +62,8 @@
         "<C-a>": false,
         "<C-f>": false,
         "<C-b>": false,
-        "<C-v>": false,
+        "<C-o>": false,
+        "<C-w>": false,
     },
     "files.autoSave": "afterDelay"
 }
