@@ -1,10 +1,8 @@
 [user]
 	email = matheus.rauen@grad.ufsc.br
-    name = Matheus Rauen C. L. 
-
-[author]
-    name = Matheus Rauen C. L.
-    email = matheus.rauen@grad.ufsc.br
-
-[init]
-    defaultBranch = master 
+	name = m-rauen
+[alias]
+	clone-all = clone --recurse-submodules
+	pull-all = pull --recurse-submodules
+[http]
+	postBuffer = 157286400

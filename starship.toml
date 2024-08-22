@@ -1,18 +1,21 @@
 format = """
 $time$all$character
 """
+command_timeout = 50
 
-command_timeout = 500
+[package]
+disabled = true
 
 [nodejs]
 disabled = true
 
 [python]
-style = '🐍 '
-format = ' via [${symbol}(${version} )(\($virtualenv\))]($style) '
+format = ' with [${symbol}(${version} ) (\($virtualenv\) )]($style)'
+style = "bold green"
 
-[package]
-disabled = true
+[rust]
+format = ' with [$symbol($version )]($style)'
+style = 'bold red'
 
 [username]
 style_user = "bold blue"

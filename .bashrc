@@ -111,15 +111,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# OpenMPI here:
-export PATH="/usr/apps/openmpi/4.1.1/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/apps/openmpi/4.1.1/lib:$LD_LIBRARY_PATH"
-export MPI_DIR="/usr/apps/openmpi/4.1.1"
+# LaTeX here: 
+export PATH=$PATH:"/usr/local/texlive/2023/bin/x86_64-linux:"
 
-# LaTeX here:
-export MANPATH="$MANPATH:/usr/local/texlive/2022/texmf-dist/doc/man"
-export INFOPATH="$INFOPATH:/usr/local/texlive/2022/texmf-dist/doc/info"
-export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+# Pip here: 
+export PATH=$PATH:"/home/matheus-r/.local/lib/python3.10/site-packages/"
+
+# Rust here: 
+export PATH=$PATH:"/home/matheus-r/.cargo/bin"
+
+# Overreact here: 
+export PATH="$HOME/.local/bin:$PATH"
+
+# OpenMPI here:
+#export PATH=$PATH:"/usr/local/bin"
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/local/lib"
 
 # ORCA here:
 export ORCA_DIR="/home/matheus-r/.orca"
@@ -127,22 +133,16 @@ export PATH=$PATH:"/home/matheus-r/.orca"
 
 # NCIPlot here: 
 export NCIPLOT_HOME="/home/matheus-r/nciplot/"
-export OMP_NUM_THREADS=4 
+export OMP_NUM_THREADS=4
 
 # MultiWFN here: 
-export OMP_STACKSIZE=2G
-ulimit -s unlimited 
-export Multiwfnpath='/home/matheus-r/MultiWFN'
-export PATH=$PATH:'/home/matheus-r/MultiWFN'
+export OMP_STACKSIZE=2000M
+ulimit -s unlimited
+export Multiwfnpath='/home/matheus-r/Multiwfn'
+export PATH=$PATH:'/home/matheus-r//Multiwfn'
 
-# xTB here:
-export MKL_NUM_THREADS=4
-export OMP_NUM_THREADS=4
-export OMP_STACKSIZE=2G
-export OMP_MAX_ACTIVE_LEVELS=1
-ulimit -s unlimited 
-export XTBPATH="/home/matheus-r/.xtb"
-source $XTBPATH/share/xtb/config_env.bash 
+# VMD here:
+alias vmd='/home/matheus-r/.vmd/bin/vmd'
 
 # Config for Gogh load themes in Gnome correctly
 export TERMINAL=gnome-terminal
@@ -239,3 +239,4 @@ alias ls='lsd'
 alias l='ls -l'
 alias ll='ls -la'
 alias lt='ls --tree'
+. "$HOME/.cargo/env"
