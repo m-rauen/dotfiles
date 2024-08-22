@@ -1,0 +1,48 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "capslock capslock",
+        "command": "extension.vim_escape",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "escape",
+        "command": "-extension.vim_escape",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "notebook.cell.insertMarkdownCellBelow",
+        "when": "config.notebook.globalToolbarShowLabel && notebookEditable && config.notebook.globalToolbarShowLabel != 'never' && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookEditable && config.notebook.insertToolbarLocation != 'betweenCells' && config.notebook.insertToolbarLocation != 'hidden'"
+    },
+    {
+        "key": "d d",
+        "command": "notebook.cell.delete",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+        "key": "d d",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+        "key": "delete",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    },
+    {
+        "key": "shift+delete",
+        "command": "jupyter.deleteCells",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+; x",
+        "command": "-jupyter.deleteCells",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    }
+]

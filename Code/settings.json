@@ -1,21 +1,23 @@
 {
     "editor.wordWrap": "on",
+    "editor.lineNumbers": "relative",
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true, 
     "editor.fontSize": 14, 
     "editor.parameterHints.enabled": false,
     "editor.rulers": [80, 120],
-    "editor.lineNumbers": "relative",
     "editor.semanticHighlighting.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.labelFormat": "short",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "One Dark Pro Darker",
     
     "breadcrumbs.enabled": true,
     
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+
+    "notebook.output.fontFamily": "Fira Code",
     
     "tabnine.experimentalAutoImports": true,
     "extensions.ignoreRecommendations": true,
@@ -23,6 +25,7 @@
     "git.ignoreLimitWarning": true,
     "python.defaultInterpreterPath": "/bin/python3",
     "[python]": {
+    
         "editor.formatOnType": true
     },
     "vim.easymotion": true,
@@ -62,8 +65,15 @@
         "<C-a>": false,
         "<C-f>": false,
         "<C-b>": false,
-        "<C-o>": false,
+        "<C-v>": true,
         "<C-w>": false,
     },
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 1,
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.lineNumbers": "on",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
 }
