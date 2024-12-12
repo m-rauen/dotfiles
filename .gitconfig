@@ -3,6 +3,12 @@
 	name = m-rauen
 [alias]
 	clone-all = clone --recurse-submodules
-	pull-all = pull --recurse-submodules
+    pull-all = pull --recurse-submodules
+    apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
 [http]
 	postBuffer = 157286400
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
