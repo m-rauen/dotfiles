@@ -1,38 +1,41 @@
 syntax on
 
-map I :! pdflatex %<CR><CR> 
-map S :! mupdf-x11 $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
+"map I :! pdflatex %<CR><CR> 
+"map S :! mupdf-x11 $(echo % \| sed 's/tex$/pdf/') & disown<CR><CR>
 
-set spell
-set spelllang=pt_br
+set spelllang=en_us,pt_br
+set paste
 set ignorecase
 set smartcase
 set clipboard+=unnamedplus  "if 'unnamedplus' doesnt work, try 'unnamed'"
 set noerrorbells
 set encoding=utf8
 set keymap=accents
-set tabstop=4 softtabstop=4
+set tabstop=4 softtabstop=4     
 set shiftwidth=4
 set expandtab
 set smartindent
 set nocompatible
 set wrap
+set hlsearch
 set linebreak
 set tw=80
 set smartcase
 set incsearch
 set nu
+set relativenumber
 set noswapfile
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-" -------------------------------
-call plug#begin('~/.vim/plugged')
+"---
 
+call plug#begin('~/.vim/plugged')
 
 " Vim Stuff
 Plug 'tpope/vim-fugitive'
+Plug 'romainl/vim-cool'
 Plug 'vim-utils/vim-man'
 Plug 'ervandew/supertab'
 Plug 'raimondi/delimitmate'
@@ -41,7 +44,7 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'honza/vim-snippets'
 Plug 'jayli/vim-easycomplete'
-Plug 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 Plug 'itchyny/lightline.vim'
 
 " Markdown Stuff
@@ -62,42 +65,36 @@ Plug 'yggdroot/indentline'
 
 " Themes Stuff
 Plug 'morhetz/gruvbox'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'nlknguyen/papercolor-theme'
+Plug 'junegunn/seoul256.vim'
 
 call plug#end()
-" -------------------------------
 
+"--- 
 
-colorscheme gruvbox
+colorscheme tokyonight
 set background=dark
 
+"--- 
 
 if executable('rg')
     let g:rg_derive_root='true'
 endif
 
-" LaTeX Live Preview Configs
-" let g:livepreview_previewer = 'okular'
-let g:livepreview_engine = 'pdflatex'
-let g:livepreview_cursorhold_recompile = 0
+" Tokyonight Configs
+let g:tokyonight_style = 'storm' " available: night, storm
+let g:tokyonight_enable_italic = 1
 
-" Vim-Tex Configs
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=1
+" Vim-Cool Configs
+let g:cool_total_matches = 1
 
 " Vim-Tex-Conceal Configs
 set conceallevel=1
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
 
-" UltiSnips Configs
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-let g:UltiSnipsSnippetsDir="~/.vim/plugged/vim-snippets/UltiSnips"
-let g:UltiSnipsSnippetDirectory=['UltiSnips']
-
-" Lightline Configs 
+" Lightline Configs
 let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ 'active': {
@@ -105,16 +102,8 @@ let g:lightline = {
       \             [ 'readonly', 'filename', 'modified', 'msg' ] ]
       \ },
       \ 'component': {
-      \   'msg': 'Go on!'
+      \   'msg': 'Keep Grinding'
       \ },
       \ }
 
 set laststatus=2
-
-" EasyComplete Configs
-let g:easycomplete_tab_trigger="<c-space>"
-let g:easycomplete_diagnostics_enable = 0
-let g:easycomplete_scheme="dark"
-nnoremap <silent> <C-j> :EasyCompleteNextDiagnostic<CR>
-nnoremap <silent> <C-k> :EasyCompletePreviousDiagnostic<CR>
-

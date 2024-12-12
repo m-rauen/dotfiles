@@ -23,8 +23,9 @@
     "extensions.ignoreRecommendations": true,
 
     "git.ignoreLimitWarning": true,
-    "python.defaultInterpreterPath": "/bin/python3",
+    "python.defaultInterpreterPath": "/home/matheus-r/Documents/geemm/ovrrx/.venv",
     "[python]": {
+    
     
         "editor.formatOnType": true
     },
@@ -69,7 +70,6 @@
         "<C-w>": false,
     },
     "files.autoSave": "afterDelay",
-    "window.zoomLevel": 1,
     "security.workspace.trust.untrustedFiles": "open",
     "notebook.lineNumbers": "on",
     "notebook.cellToolbarLocation": {
