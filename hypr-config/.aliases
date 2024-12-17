@@ -4,9 +4,6 @@ alias dow='cd ~/Downloads'
 alias pics='cd ~/Pictures'
 alias repos='cd ~/.repos'
 alias mans='cd ~/Documents/manuals/'
-alias ufsc='cd ~/Documents/ufsc/'
-alias mestrado='cd ~/Documents/ufsc/Mestrado/'
-alias grad='cd ~/Documents/ufsc/Graduacao/'
 alias cdg='cd ~/Documents/geemm/'
 alias geemm='cd ~/Documents/geemm/'
 alias rotax='cd ~/Documents/geemm/rotax-study'
@@ -54,17 +51,6 @@ alias nciplot='~/.nciplot/nciplot'
 # vim aliases
 alias v='vim'
 alias vver='vim --version'
-
-# tmux aliases
-alias t='tmux'
-alias tmx='tmux'
-alias tlist='tmux ls' #list sessions 
-alias tnew='tmux new-session -s' #start named session 
-alias tattach='tmux a -t' #attach to specific session 
-alias tdetach='tmux detach' #detach from the current session 
-alias tkill='tmux kill-session -t'  #kill session specified 
-alias trename='tmux rename-session -t' #rename specific session 
-alias tinfo='tmux info' #show every session, window, pane, etc
 
 # git aliases
 alias gi='git init -b master'
