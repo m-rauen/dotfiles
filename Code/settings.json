@@ -1,5 +1,5 @@
 {
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "wordWrapColumn",
     "editor.lineNumbers": "relative",
     "editor.bracketPairColorization.enabled": true,
     "editor.fontFamily": "Fira Code",
