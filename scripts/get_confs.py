@@ -1,5 +1,16 @@
 import re
 
+def parse_conformer_ids(raw_input):
+    ids = []
+    parts = raw_input.split(',')
+    for part in parts:
+        if '-' in part:
+            start, end = map(int, part.split('-'))
+            ids.extend(range(start, end + 1))
+        else:
+            ids.append(int(part))
+    return ids
+
 def get_separated_xyz(ids, file):
     new_ids = []
     index = 0
@@ -18,17 +29,11 @@ def get_separated_xyz(ids, file):
             for conf_id in new_ids:
                 if re.match('^{}\s*->.'.format(conf_id), header):
                     coordinates = lines[index : index + num_atoms + 2]
-                    output_file = '{}.inp'.format(conf_id)
+                    output_file = '{}.xyz'.format(conf_id)
                     with open(output_file, 'w') as out:
-                        out.write('! b3lyp def2-svp d4 rijcosx autoaux\n')
-                        out.write('! cpcm()\n\n')
-                        out.write('%maxcore\n\n')
-                        out.write('%pal\n')
-                        out.write('    nprocs\n')
-                        out.write('end\n\n')
-                        out.write('* xyz 0 1\n')
+                        out.writelines('{}\n'.format(num_atoms))
+                        out.writelines(header + '\n')
                         out.writelines(coordinates[2:])
-                        out.write('*')
                     break
             index += num_atoms + 2
         else: 
@@ -36,7 +41,8 @@ def get_separated_xyz(ids, file):
             pass
         
 filename = str(input('Enter filename (out.xyz): ')).strip()
-conformer_ids = input('Enter conformer IDs (1,5,10): ').split(',')
+raw_ids = input('Enter conformer IDs (e.g., 1,5,10-12): ')
+conformer_ids = parse_conformer_ids(raw_ids)
 get_separated_xyz(conformer_ids, filename)
          
         
